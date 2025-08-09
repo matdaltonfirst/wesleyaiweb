@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wesley AI — Church Website Assistant</title>
+  <meta name="description" content="Wesley AI adds a friendly, Wesleyan‑voiced assistant to your church website—helping visitors 24/7." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --brand-teal:#1495a0; --brand-dark:#0e3a3f;
+    }
+    .brand-bg{ background: var(--brand-teal); }
+    .brand-text{ color: var(--brand-teal); }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-30 backdrop-blur bg-white/70 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-2xl flex items-center justify-center font-bold text-white shadow brand-bg">W</div>
+        <div class="leading-tight">
+          <div class="font-semibold text-lg">Wesley AI</div>
+          <div class="text-xs text-gray-500">Church websites • Smart assistant</div>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#features" class="hover:text-gray-700">Features</a>
+        <a href="#pricing" class="hover:text-gray-700">Pricing</a>
+        <a href="#faq" class="hover:text-gray-700">FAQ</a>
+        <a href="#contact" class="hover:text-gray-700">Contact</a>
+        <a href="#contact" class="px-3 py-2 rounded-xl text-white brand-bg">Book a Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0" aria-hidden>
+      <svg class="w-full h-full opacity-20" viewBox="0 0 1440 400" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#1495a0" />
+            <stop offset="100%" stop-color="#73d0d7" />
+          </linearGradient>
+        </defs>
+        <rect width="1440" height="400" fill="url(#grad)" />
+      </svg>
+    </div>
+    <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-28">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow-sm">Your church website, now with a friendly guide.</h1>
+          <p class="mt-5 text-white/95 md:text-lg max-w-prose">Wesley AI is a website concierge trained on your church’s content and Wesleyan theology. Answer questions, recommend next steps, and help newcomers feel at home—24/7.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#pricing" class="px-5 py-3 rounded-2xl font-semibold text-white shadow" style="background:var(--brand-dark)">See Pricing</a>
+            <a href="#contact" class="px-5 py-3 rounded-2xl font-semibold border border-white/70 text-white hover:bg-white/10">Get a Live Demo</a>
+          </div>
+          <div class="mt-4 text-white/90 text-sm">Quick install • No-code widget • Works on modern site builders</div>
+        </div>
+        <div class="bg-white/90 rounded-2xl shadow-xl p-5">
+          <div class="text-sm text-gray-600 mb-2">Widget preview</div>
+          <div class="rounded-xl border p-4">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold brand-bg">W</div>
+              <div>
+                <div class="font-semibold">Wesley AI</div>
+                <div class="text-xs text-gray-500">“Hi! I’m Wesley AI. How can I help you today?”</div>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-end"><div class="max-w-[85%] rounded-2xl px-3 py-2 text-sm shadow bg-gray-100 text-gray-800">What time are services?</div></div>
+              <div class="flex justify-start"><div class="max-w-[85%] rounded-2xl px-3 py-2 text-sm shadow text-white brand-bg">This Sunday we gather at 9:00am (Traditional) and 11:00am (Modern). Can I send you directions or help you check in kids?</div></div>
+              <div class="flex justify-end"><div class="max-w-[85%] rounded-2xl px-3 py-2 text-sm shadow bg-gray-100 text-gray-800">Do you have groups for young families?</div></div>
+              <div class="flex justify-start"><div class="max-w-[85%] rounded-2xl px-3 py-2 text-sm shadow text-white brand-bg">Yes! We have several groups that meet weekly. Here are three options that might fit.</div></div>
+            </div>
+          </div>
+          <div class="mt-3 text-xs text-gray-500">*Demo content for illustration. Your bot is trained on your site + doctrine.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-bold">Built for churches. Ready in minutes.</h2>
+    <p class="mt-2 text-gray-600 max-w-2xl">Add a smart, on‑brand assistant to your website with a single embed. We’ll configure it for your church’s ministries, service times, and voice.</p>
+    <div class="mt-8 grid md:grid-cols-3 gap-6" id="feature-grid"></div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="bg-white border-y border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl md:text-3xl font-bold">Simple pricing that scales with your church</h2>
+      <p class="mt-2 text-gray-600 max-w-2xl">Monthly or annual—save 10% when you pay yearly. Includes setup, training, and ongoing support.</p>
+
+      <div class="mt-6 flex items-center gap-3">
+        <span class="text-sm text-gray-600">Monthly</span>
+        <button id="price-toggle" class="relative w-16 h-8 rounded-full bg-gray-200" aria-label="Toggle annual pricing" aria-pressed="false">
+          <span id="price-knob" class="absolute top-1 left-1 w-6 h-6 rounded-full bg-white shadow transition-transform"></span>
+        </button>
+        <span class="text-sm text-gray-600">Annual <span class="ml-1 px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700">Save 10%</span></span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mt-8" id="plans"></div>
+      <p class="mt-6 text-xs text-gray-500">Pricing shown is for the Wesley AI service package. Under the hood, we manage agent hosting and message credits so you don’t have to.</p>
+    </div>
+  </section>
+
+  <!-- Social proof -->
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-3 gap-6" id="proof"></div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-gray-50 border-y border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl md:text-3xl font-bold">Frequently asked questions</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6" id="faq-list"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold">Book a 20‑minute walkthrough</h2>
+        <p class="mt-2 text-gray-600 max-w-prose">We’ll show you the widget, review best practices, and map out your content. Leave with a clear go‑live plan.</p>
+        <ul class="mt-6 space-y-3 text-sm">
+          <li class="flex gap-2"><span class="mt-1">✅</span> Site crawl & content checklist</li>
+          <li class="flex gap-2"><span class="mt-1">✅</span> Voice & guardrails setup</li>
+          <li class="flex gap-2"><span class="mt-1">✅</span> Embed code & launch support</li>
+        </ul>
+      </div>
+      <form id="demo-form" class="bg-white rounded-2xl shadow p-6 border grid gap-3">
+        <div>
+          <label class="block text-sm font-medium">Your Name</label>
+          <input name="name" class="mt-1 w-full border rounded-xl p-3 focus:outline-none focus:ring" placeholder="Jane Doe" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Email</label>
+          <input name="email" type="email" class="mt-1 w-full border rounded-xl p-3 focus:outline-none focus:ring" placeholder="you@church.org" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Church Website</label>
+          <input name="website" class="mt-1 w-full border rounded-xl p-3 focus:outline-none focus:ring" placeholder="https://yourchurch.org" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Message</label>
+          <textarea name="message" class="mt-1 w-full border rounded-xl p-3 focus:outline-none focus:ring" rows="4" placeholder="Tell us about your goals"></textarea>
+        </div>
+        <button type="submit" class="mt-2 px-5 py-3 rounded-2xl font-semibold text-white brand-bg">Request Demo</button>
+        <div class="text-xs text-gray-500">We’ll respond within one business day.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-sm text-gray-600 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+      <div>© <span id="year"></span> Wesley AI. All rights reserved.</div>
+      <div class="flex gap-4 items-center">
+        <a href="#" class="hover:text-gray-800">Privacy</a>
+        <a href="#" class="hover:text-gray-800">Terms</a>
+        <a href="#contact" class="hover:text-gray-800">Contact</a>
+        <button id="run-tests" type="button" class="ml-2 px-2 py-1 rounded-lg border hover:bg-gray-50" title="Runs a couple of console self-tests">Run Self‑Tests</button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---------- Data
+    const brand = { teal: '#1495a0' };
+
+    const features = [
+      { title: 'Trained on your site', desc: 'We crawl your public pages and keep answers aligned with your latest info.' },
+      { title: 'Wesleyan voice', desc: 'Grounded in Wesleyan/UMC theology with gentle, welcoming language.' },
+      { title: 'No-code install', desc: 'Drop-in widget works on WordPress, Squarespace, Wix, Subsplash, and more.' },
+      { title: 'Next‑step actions', desc: 'Guide visitors to plan a visit, join a group, or contact a pastor—without hunting menus.' },
+      { title: 'Privacy‑first', desc: 'Only uses content you approve. Easy opt‑outs and guardrails by design.' },
+      { title: 'Human handoff', desc: 'Capture questions and route them to your team when a human touch is needed.' },
+    ];
+
+    const plans = [
+      { name:'Under 100 Members', monthly:55, yearly:594, highlight:false, features:[
+        'Custom-branded chat widget','Trained on your website content','Wesleyan theology grounding','Up to 1,000 monthly chat messages','Email support (next-business day)'] },
+      { name:'101+ Members', monthly:70, yearly:760, highlight:true, features:[
+        'Everything in Under 100','Priority message routing','Basic analytics & transcripts','Quarterly optimization review','Priority support (same business day)'] },
+    ];
+
+    const proof = [
+      { metric:'&lt;5 min', label:'Install time' },
+      { metric:'24/7', label:'Visitor help' },
+      { metric:'10%', label:'Annual savings' },
+    ];
+
+    const faqs = [
+      { q:'How does installation work?', a:'We provide a short script tag to paste into your website (or Subsplash/WordPress/Squarespace embed). No code changes required.' },
+      { q:'What content trains Wesley AI?', a:'Your public pages plus any docs you share with us. We constrain answers to your content and a Wesleyan/UMC voice.' },
+      { q:'Can we review or edit answers?', a:'Yes. You can suggest phrasing, add custom Q&A items, and we’ll refine the bot’s voice to match your church.' },
+      { q:'What if we exceed message limits?', a:'We’ll monitor usage and scale message credits as needed. We’ll notify you before any changes.' },
+      { q:'Is it secure and private?', a:'We only use content you approve. No counseling or sensitive personal data is requested by default. You control what’s in scope.' },
+      { q:'Can we cancel anytime?', a:'Yes. Monthly plans are cancel‑anytime; annual plans are prepaid with a 10% discount.' },
+    ];
+
+    // ---------- Helpers
+    const $ = (sel, ctx=document) => ctx.querySelector(sel);
+    const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
+
+    function formatPrice(monthly, yearly, yearlyMode){
+      return yearlyMode ? `$${yearly}/yr` : `$${monthly}/mo`;
+    }
+
+    // ---------- Renderers
+    function renderFeatures(){
+      const grid = $('#feature-grid');
+      grid.innerHTML = features.map(f => `
+        <div class="rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+          <div class="font-semibold">${f.title}</div>
+          <p class="mt-2 text-sm text-gray-600">${f.desc}</p>
+        </div>
+      `).join('');
+    }
+
+    function renderPlans(yearly){
+      const wrap = $('#plans');
+      wrap.innerHTML = plans.map(p => `
+        <div class="rounded-2xl border p-6 bg-white shadow-sm relative ${p.highlight ? 'ring-2' : ''}" style="${p.highlight ? `--tw-ring-color:${brand.teal}` : ''}">
+          ${p.highlight ? '<div class="absolute -top-3 right-4 bg-gray-900 text-white text-xs px-3 py-1 rounded-full shadow">Most popular</div>' : ''}
+          <div class="flex items-baseline justify-between">
+            <h3 class="text-xl font-bold">${p.name}</h3>
+            <div class="text-2xl font-extrabold brand-text">${formatPrice(p.monthly, p.yearly, yearly)}</div>
+          </div>
+          <ul class="mt-4 space-y-2 text-sm">
+            ${p.features.map(f => `<li class="flex gap-2"><span style="color:${brand.teal}">✓</span><span>${f}</span></li>`).join('')}
+          </ul>
+          <a href="#contact" class="mt-5 inline-block px-4 py-2 rounded-xl text-white brand-bg">${p.highlight ? 'Start Your Trial' : 'Get Started'}</a>
+          <div class="mt-3 text-xs text-gray-500">Cancel anytime on monthly plans. Annual saves 10%.</div>
+        </div>
+      `).join('');
+    }
+
+    function renderProof(){
+      const grid = $('#proof');
+      grid.innerHTML = proof.map(s => `
+        <div class="rounded-2xl border p-6 bg-white shadow-sm">
+          <div class="text-3xl font-extrabold brand-text">${s.metric}</div>
+          <div class="mt-1 text-sm text-gray-600">${s.label}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderFaq(){
+      const list = $('#faq-list');
+      list.innerHTML = faqs.map((f, i) => `
+        <div class="rounded-2xl border bg-white p-5 shadow-sm">
+          <button type="button" class="w-full flex items-start justify-between gap-4 text-left faq-toggle" aria-expanded="false" data-id="${i}">
+            <span class="font-semibold">${f.q}</span>
+            <span class="shrink-0 transition-transform">▾</span>
+          </button>
+          <p class="mt-3 text-sm text-gray-600 hidden">${f.a}</p>
+        </div>
+      `).join('');
+    }
+
+    // ---------- Interactions
+    let yearlyMode = false;
+
+    function syncToggle(){
+      const knob = $('#price-knob');
+      $('#price-toggle')?.setAttribute('aria-pressed', yearlyMode ? 'true' : 'false');
+      knob && (knob.style.transform = yearlyMode ? 'translateX(32px)' : 'translateX(0)');
+      renderPlans(yearlyMode);
+    }
+
+    // FAQ click
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest && e.target.closest('.faq-toggle');
+      if (!btn) return;
+      const card = btn.parentElement;
+      const p = card.querySelector('p');
+      const caret = btn.querySelector('span.shrink-0');
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      if (p) p.classList.toggle('hidden');
+      if (caret) caret.style.transform = expanded ? 'rotate(0)' : 'rotate(180deg)';
+    });
+
+    // Price toggle
+    $('#price-toggle')?.addEventListener('click', () => {
+      yearlyMode = !yearlyMode;
+      syncToggle();
+    });
+
+    // Demo form (no backend: replace with Formspree/Netlify later)
+    $('#demo-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thanks! We\'ll be in touch shortly.');
+      e.target.reset();
+    });
+
+    // Footer year
+    $('#year').textContent = new Date().getFullYear();
+
+    // Initial render
+    renderFeatures();
+    renderPlans(yearlyMode);
+    renderProof();
+    renderFaq();
+    syncToggle();
+
+    // ---------- Self tests (run from footer button)
+    function runTests(){
+      const results = [];
+      results.push(['features rendered', $$('#feature-grid > div').length === features.length]);
+      results.push(['plans show monthly by default', $$('#plans .font-extrabold')[0].textContent.trim().endsWith('/mo')]);
+      yearlyMode = true; syncToggle();
+      results.push(['toggle switches to yearly', $$('#plans .font-extrabold')[0].textContent.trim().endsWith('/yr')]);
+      yearlyMode = false; syncToggle();
+      // FAQ expand/collapse
+      const firstFaqBtn = $('.faq-toggle');
+      firstFaqBtn.click();
+      results.push(['faq expands on click', firstFaqBtn.getAttribute('aria-expanded') === 'true']);
+      firstFaqBtn.click();
+      results.push(['faq collapses on second click', firstFaqBtn.getAttribute('aria-expanded') === 'false']);
+
+      const failed = results.filter(r => !r[1]).map(r => r[0]);
+      if (failed.length){
+        console.error('Self-tests FAILED:', failed);
+      } else {
+        console.log('Self-tests passed ✅');
+      }
+    }
+    $('#run-tests')?.addEventListener('click', runTests);
+  </script>
+</body>
+</html>
